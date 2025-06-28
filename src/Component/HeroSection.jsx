@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Coffee } from 'lucide-react';
+import mahababulPic from '../assets/Mahabubul-Alam.jpg';
+
 
 
 
@@ -70,7 +72,7 @@ const HeroSection = () => {
                                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-3xl rotate-6 opacity-20"></div>
                                 <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
                                     <img
-                                        src="https://i.ibb.co/SD1Vs346/Mahabubul-Alam.jpg"
+                                        src={mahababulPic}
                                         alt="Mahabubul Alam Arif - Web Developer"
                                         className="w-full h-96 object-cover"
                                     />

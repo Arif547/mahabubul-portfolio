@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 
 const Header = () => {
@@ -7,7 +8,8 @@ const Header = () => {
         <header className="sticky top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-gray-200/50">
             <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 <div className="text-2xl font-bold text-gray-900">
-                    Alex<span className="text-blue-600">Dev</span>
+                    {/* <img src={logo} alt="Logo" className="inline-block w-22 h-22 mr-2" /> */}
+                    Mahabubul<span className="text-blue-600"> Alam</span>
                 </div>
                 <div className="hidden md:flex space-x-8">
                     {['About', 'Skills', 'Education', 'Projects', 'Contact'].map((item) => (
