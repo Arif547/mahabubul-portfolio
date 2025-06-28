@@ -15,13 +15,13 @@ const AboutSection = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-6">
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            I'm a passionate full-stack developer with 5+ years of experience creating
-                            robust web applications. I specialize in React, Node.js, and cloud technologies,
-                            with a strong focus on user experience and performance optimization.
+                            I'm a full-stack developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js) with a strong focus on clean code, performance, and user experience. I also have 5+ years of professional experience working with WordPress, Elementor, Elementor Pro, and WooCommerce, building fully customized websites and eCommerce solutions.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            When I'm not coding, you'll find me exploring new technologies, contributing to
-                            open-source projects, or sharing knowledge through technical writing and mentoring.
+                            I enjoy crafting responsive, user-focused designs that drive results—whether it's a web application, landing page, or online store. I'm passionate about learning new technologies, improving development workflows, and solving real-world problems with efficient code.
+                        </p>
+                        <p className="text-lg text-gray-700 leading-relaxed">
+                            Beyond development, I actively contribute to open-source projects, mentor junior developers, and share insights through technical writing.
                         </p>
 
                         <div className="bg-gray-50 rounded-2xl p-6 space-y-4">
@@ -29,7 +29,7 @@ const AboutSection = () => {
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="flex items-center gap-3">
                                     <MapPin className="text-blue-600" size={16} />
-                                    <span className="text-gray-700 text-sm">San Francisco, CA</span>
+                                    <span className="text-gray-700 text-sm">Dhaka, Bangladesh</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Briefcase className="text-blue-600" size={16} />

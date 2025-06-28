@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Background with Gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer rounded rectangle (rotated effect) -->
+  <rect x="2" y="2" width="28" height="28" rx="6" ry="6" fill="url(#logoGradient)" transform="rotate(3 16 16)"/>
+  
+  <!-- Inner white background -->
+  <rect x="4" y="4" width="24" height="24" rx="4" ry="4" fill="white" transform="rotate(3 16 16)"/>
+  
+  <!-- Code icon (simplified) -->
+  <g transform="translate(16,16) rotate(3) translate(-16,-16)">
+    <!-- Left bracket -->
+    <path d="M12 10 L10 12 L10 14 L12 16" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Right bracket -->
+    <path d="M20 10 L22 12 L22 14 L20 16" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Middle slash -->
+    <path d="M17 10 L15 16" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Green accent dot -->
+  <circle cx="26" cy="6" r="3" fill="#4ade80" stroke="white" stroke-width="1"/>
+</svg>

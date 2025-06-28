@@ -1,9 +1,10 @@
-import { Linkedin, Mail, Phone } from 'lucide-react';
+import { Contact, Linkedin, Mail, Phone } from 'lucide-react';
 import React from 'react';
+import ContactForm from './ContactForm';
 
 const ContactSection = () => {
     return (
-        <section id="contact" className="py-20 bg-white">
+        <section id="contact" className="py-20 bg-gray-50">
             <div className="max-w-4xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
@@ -30,7 +31,7 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-900">Email</p>
-                                    <p className="text-gray-600">alex.johnson@email.com</p>
+                                    <p className="text-gray-600">mahabubulalamarif@gmail.com</p>
                                 </div>
                             </div>
 
@@ -40,7 +41,7 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-900">Phone</p>
-                                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                                    <p className="text-gray-600">+8801515219590</p>
                                 </div>
                             </div>
 
@@ -50,18 +51,19 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-900">LinkedIn</p>
-                                    <p className="text-gray-600">linkedin.com/in/alexjohnson</p>
+                                    <p className="text-gray-600">https://www.linkedin.com/in/mahabubularif9/</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="bg-gray-50 p-8 rounded-2xl">
-                        <div className="space-y-6">
+                        <ContactForm />
+                        {/* <form className="space-y-6">
                             <div>
                                 <label className="block text-sm font-semibold text-gray-900 mb-2">Your Name</label>
                                 <input
-                                    type="text"
+                                    type="text" name="name"
                                     className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-600 focus:outline-none transition-colors"
                                     placeholder="John Doe"
                                 />
@@ -69,23 +71,24 @@ const ContactSection = () => {
                             <div>
                                 <label className="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
                                 <input
-                                    type="email"
+                                    type="email" name='email'
                                     className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-600 focus:outline-none transition-colors"
                                     placeholder="john@example.com"
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-semibold text-gray-900 mb-2">Project Details</label>
-                                <textarea
+                                <textarea type="text"
+                                    name="message"
                                     rows="4"
                                     className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-600 focus:outline-none transition-colors resize-none"
                                     placeholder="Tell me about your project..."
                                 ></textarea>
                             </div>
-                            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl transition-all duration-300 shadow-lg shadow-blue-600/25">
+                            <input type='submit' className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl transition-all duration-300 shadow-lg shadow-blue-600/25">
                                 Send Message
-                            </button>
-                        </div>
+                            </input>
+                        </form> */}
                     </div>
                 </div>
             </div>
