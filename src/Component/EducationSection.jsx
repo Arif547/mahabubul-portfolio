@@ -1,30 +1,48 @@
 import React from 'react';
-import { Award, Calendar, GraduationCap, Building, ChevronRight } from 'lucide-react';
+import { Award, Calendar, GraduationCap, Building, ChevronRight, Book } from 'lucide-react';
 
 
 const EducationSection = () => {
     const education = [
         {
-            degree: "Master of Computer Science",
-            school: "Stanford University",
-            year: "2018 - 2020",
-            description: "Specialized in Software Engineering and AI. Graduated Magna Cum Laude with a focus on web technologies and machine learning applications.",
-            achievements: ["Dean's List", "Research Assistant", "GPA: 3.8/4.0"]
+            degree: "Master of Arts",
+            subject: "Islamic History & Culture",
+            school: "National University",
+            year: "2020 - 2021",
+            // description: "Study of the origins, growth, and global impact of Islam, including its civilization, heritage, and contributions to art, science, and society.",
+            // achievements: ["Dean's List", "Research Assistant", "GPA: 3.8/4.0"]
         },
         {
-            degree: "Bachelor of Computer Science",
-            school: "UC Berkeley",
-            year: "2014 - 2018",
-            description: "Foundation in computer science fundamentals including algorithms, data structures, and software development methodologies.",
-            achievements: ["Summa Cum Laude", "CS Honor Society", "GPA: 3.9/4.0"]
+            degree: "Bachelor of Arts",
+            subject: "Islamic History & Culture",
+            school: "National University",
+            year: "2015- 2019",
+            // description: "Foundation in computer science fundamentals including algorithms, data structures, and software development methodologies.",
+            // achievements: ["Summa Cum Laude", "CS Honor Society", "GPA: 3.9/4.0"]
+        },
+        {
+            degree: "Higher Secondary Certificate",
+            subject: "Humanities",
+            school: "Chittagong Cantonment Public College",
+            year: "2013- 2015",
+            // description: "Foundation in computer science fundamentals including algorithms, data structures, and software development methodologies.",
+            // achievements: ["Summa Cum Laude", "CS Honor Society", "GPA: 3.9/4.0"]
+        },
+        {
+            degree: "Secondary School Certificate",
+            subject: "Humanities",
+            school: "Bayezid Bostami Cantonment Board High School",
+            year: "2013",
+            // description: "Foundation in computer science fundamentals including algorithms, data structures, and software development methodologies.",
+            // achievements: ["Summa Cum Laude", "CS Honor Society", "GPA: 3.9/4.0"]
         }
     ];
 
     const certifications = [
-        { name: "AWS Certified Solutions Architect", org: "Amazon Web Services", year: "2023" },
-        { name: "Google Cloud Professional Developer", org: "Google Cloud", year: "2022" },
-        { name: "React Advanced Certification", org: "Meta", year: "2022" },
-        { name: "Node.js Certified Developer", org: "Node.js Foundation", year: "2021" }
+        { name: "MERN Web Development", org: "Programming hero", year: "2025" },
+        { name: "SEO", org: "Passive Journal Course", year: "2022" },
+        // { name: "React Advanced Certification", org: "Meta", year: "2022" },
+        // { name: "Node.js Certified Developer", org: "Node.js Foundation", year: "2021" }
     ];
     return (
         <section id="education" className="py-20 bg-white">
@@ -52,19 +70,25 @@ const EducationSection = () => {
                                         </div>
                                         <div className="flex-1">
                                             <h4 className="text-xl font-semibold text-gray-900 mb-1">{edu.degree}</h4>
-                                            <div className="flex items-center gap-4 mb-3">
+                                            <div className="flex items-center gap-4 mb-1">
                                                 <span className="text-blue-600 font-medium flex items-center gap-1">
                                                     <Building size={14} />
                                                     {edu.school}
                                                 </span>
-                                                <span className="text-gray-500 flex items-center gap-1">
-                                                    <Calendar size={14} />
-                                                    {edu.year}
-                                                </span>
+
                                             </div>
+                                            <span className="text-blue-600 font-medium  flex items-center gap-1 mb-2">
+                                                <Book size={14} />
+                                                {edu.subject}
+                                            </span>
+                                            <span className="text-gray-500 flex items-center gap-1">
+                                                <Calendar size={14} />
+                                                {edu.year}
+                                            </span>
+
                                             <p className="text-gray-700 mb-4">{edu.description}</p>
                                             <div className="flex flex-wrap gap-2">
-                                                {edu.achievements.map((achievement, i) => (
+                                                {edu.achievements?.map((achievement, i) => (
                                                     <span key={i} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
                                                         {achievement}
                                                     </span>
