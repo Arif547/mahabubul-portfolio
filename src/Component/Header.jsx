@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Menu, X, Code, User } from 'lucide-react';
-import resume from '../assets/resume.pdf'
+import resume from '../assets/resume-mahabubul.pdf'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +11,18 @@ const Header = () => {
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
         { name: 'Education', href: '#education' },
+        { name: 'Jobs', href: '#jobs' },
         { name: 'Projects', href: '#projects' },
         { name: 'Contact', href: '#contact' }
     ];
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     // Track active section based on scroll position
     useEffect(() => {
+
         const handleScroll = () => {
             const sections = menuItems.map(item => item.name.toLowerCase());
             const scrollPosition = window.scrollY + 100;
@@ -66,13 +72,9 @@ const Header = () => {
                     </div>
 
                     {/* Name/Brand */}
-                    <a
-                        href="/"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            handleMenuClick('#home');
-                        }}
-                        className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300"
+                    <a onClick={scrollToTop} aria-label="Go to home"
+
+                        className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-blue-600 transition-colors duration-300"
                     >
                         Mahabubul<span className="text-blue-600"> Alam</span>
                         <div className="text-xs text-gray-500 font-normal -mt-1">Full Stack Developer</div>

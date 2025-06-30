@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Coffee, Download } from 'lucide-react';
 import mahababulPic from '../assets/Mahabubul-Alam.jpg';
-import resume from '../assets/resume.pdf'
+import resume from '../assets/resume-mahabubul.pdf';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 
 
@@ -26,7 +28,7 @@ const HeroSection = () => {
                             <div>
                                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                                     Full Stack
-                                    <span className="block text-blue-600">Developer</span>
+                                    <span className="block text-blue-600">Developer </span>
                                 </h1>
                                 <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
                                     I craft exceptional digital experiences with clean code and innovative solutions.

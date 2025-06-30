@@ -21,7 +21,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-white border-t border-gray-100">
+        <footer className="border-t border-gray-100">
             <div className="max-w-7xl mx-auto px-6 py-16">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -189,17 +189,17 @@ const Footer = () => {
                         </div>
                     </div>
                 </div> */}
-                <NewsletterSubscribe />
+                {/* <NewsletterSubscribe /> */}
 
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-gray-600 text-center md:text-left">
                         <p className="font-medium">&copy; 2025 Mahabubul Alam. All rights reserved.</p>
-                        <div className="flex gap-6 mt-2 justify-center md:justify-start">
+                        {/* <div className="flex gap-6 mt-2 justify-center md:justify-start">
                             <a href="#" className="hover:text-blue-600 transition-colors text-sm">Privacy Policy</a>
                             <a href="#" className="hover:text-blue-600 transition-colors text-sm">Terms of Service</a>
                             <a href="#" className="hover:text-blue-600 transition-colors text-sm">Cookies</a>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Back to Top Button */}

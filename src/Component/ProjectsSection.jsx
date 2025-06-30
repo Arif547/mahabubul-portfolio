@@ -5,31 +5,34 @@ import { Github, ExternalLink } from 'lucide-react';
 const ProjectsSection = () => {
     const projects = [
         {
-            title: "E-Commerce Platform",
-            description: "A modern e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, shopping cart, and payment processing with admin dashboard.",
-            tech: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=300&fit=crop",
+            title: "Recipe Hub Delicious Recipes",
+            description: "About RecipeHub is a user-friendly, dynamic Recipe Book App that allows users to discover, share, and manage delicious recipes from around the world. It features top liked recipes, personalized recipe management, and social interaction through likes and user accounts.",
+            tech: ["React", "Node.js", "MongoDB", "Tailwind", "Express JS", "FireBase"],
+            image: "https://i.ibb.co/v6XwsTQN/Recipe-Hub.png",
             category: "Full Stack",
-            github: "#",
-            live: "#"
+            Client: "https://github.com/Arif547/RecipeHub-Client-Side.git",
+            Server: "https://github.com/Arif547/RecipeHub-Server-Side.git",
+            live: "https://aquamarine-bavarois-13cd20.netlify.app/"
         },
         {
-            title: "AI-Powered Chat Application",
-            description: "Real-time messaging platform with AI chatbot integration. Built with modern technologies for seamless communication and intelligent automated responses.",
-            tech: ["React", "Socket.io", "OpenAI", "Express", "Redis"],
-            image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=600&h=300&fit=crop",
-            category: "AI/ML",
-            github: "#",
-            live: "#"
+            title: "JobHub - Job Tracker",
+            description: "JobHub is a comprehensive job tracking application designed to streamline the job search process. It allows users to track job applications, manage interviews, and receive AI-generated insights on their applications.",
+            tech: ["React", "Node.js", "Tailwind", "FireBase"],
+            image: "https://i.ibb.co/F1XMf8G/Job-Tracker.png",
+            category: "Full Stack",
+            Client: "https://github.com/Arif547/JobHub",
+            Server: "",
+            live: "https://monumental-marshmallow-ef3e0f.netlify.app/"
         },
         {
-            title: "Data Analytics Dashboard",
-            description: "Interactive dashboard for business intelligence with real-time data visualization, advanced filtering, and comprehensive reporting capabilities.",
-            tech: ["React", "D3.js", "Python", "PostgreSQL", "Docker"],
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop",
-            category: "Data Viz",
-            github: "#",
-            live: "#"
+            title: "Food Tracker - Tracks Your Food Intake",
+            description: "Food Tracker is a data visualization application that helps users track their food intake and nutritional information. It provides insights into daily calorie consumption, macronutrient breakdown, and food trends over time.",
+            tech: ["React", "Node.js", "MongoDB", "Tailwind", "Express JS"],
+            image: "https://i.ibb.co/9HVvnQLp/Food-Tracker.png",
+            category: "Full Stack",
+            Client: "https://github.com/Arif547/Food-Tracker-Client-Side.git",
+            Server: "https://github.com/Arif547/Food-Tracker-Server-Side.git",
+            live: "https://coruscating-stardust-95ebcd.netlify.app/"
         }
     ];
     return (
@@ -50,7 +53,7 @@ const ProjectsSection = () => {
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                        className="w-full h-80 lg:h-full object-cover hover:scale-105 transition-transform duration-500"
+                                        className="w-full h-80 lg:h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                                     />
                                     <div className="absolute top-4 left-4">
                                         <span className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -69,13 +72,17 @@ const ProjectsSection = () => {
                                         ))}
                                     </div>
                                     <div className="flex gap-4">
-                                        <a href={project.live} className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg shadow-blue-600/25">
+                                        <a href={project.live} className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg shadow-blue-600/25">
                                             <ExternalLink size={16} />
                                             Live Demo
                                         </a>
-                                        <a href={project.github} className="border-2 border-gray-300 hover:border-blue-600 text-gray-700 hover:text-blue-600 px-6 py-3 rounded-xl transition-all duration-300 flex items-center gap-2">
+                                        <a href={project.Client} className={`border-2 border-gray-300 hover:border-blue-600 text-gray-700 hover:text-blue-600 px-6 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2 ${project.Client ? '' : 'hidden'}`}>
                                             <Github size={16} />
-                                            Code
+                                            Client
+                                        </a>
+                                        <a href={project.Server} className={`border-2 border-gray-300 hover:border-blue-600 text-gray-700 hover:text-blue-600 px-6 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2 ${project.Server ? '' : 'hidden'}`}>
+                                            <Github size={16} />
+                                            Server
                                         </a>
                                     </div>
                                 </div>

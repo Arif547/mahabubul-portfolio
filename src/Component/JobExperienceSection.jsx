@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 import {
     Calendar,
     MapPin,
@@ -31,7 +32,11 @@ const JobExperienceSection = () => {
                 "Maintained 98% client satisfaction rate",
                 "Led WordPress development for enterprise clients"
             ],
-            skills: ["WordPress", "Elementor", "Figma to Web", "Custom CSS", "Responsive Design"],
+            skills: ["WordPress", "Elementor", "Figma to Elementor", "Custom CSS", "Responsive Design", "WooCommerce", 'SEO Optimization', "TroubleShooting"],
+            websites: [
+                { name: "KitPapa.com", url: "https://kitpapa.com" },
+                { name: "KitNinja.com", url: "https://kitninja.com" }
+            ],
             isActive: true
         },
         {
@@ -49,24 +54,20 @@ const JobExperienceSection = () => {
                 "Built successful template marketplace presence",
                 "Served 1000+ customers globally"
             ],
-            skills: ["Template Design", "Elementor Pro", "WooCommerce", "Business Development", "UI/UX"],
-            websites: [
-                { name: "KitPapa.com", url: "https://kitpapa.com" },
-                { name: "KitNinja.com", url: "https://kitninja.com" }
-            ],
+            skills: ["Template Design", "Elementor Pro", "WooCommerce", "theme customization", "SEO Optimization", "E-commerce Solutions"],
             isActive: true
         }
     ];
 
     const stats = [
-        { label: "Years Experience", value: "4+", icon: Clock },
-        { label: "Websites Built", value: "200+", icon: Globe },
-        { label: "Templates Created", value: "100+", icon: Code },
-        { label: "Happy Clients", value: "1000+", icon: Users }
+        { label: "Years Experience", value: "4", icon: Clock },
+        { label: "Websites Built", value: "200", icon: Globe },
+        { label: "Templates Created", value: "100", icon: Code },
+        { label: "Happy Clients", value: "1000", icon: Users }
     ];
 
     return (
-        <section className="py-20 bg-gray-50">
+        <section id='jobs' className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -85,7 +86,7 @@ const JobExperienceSection = () => {
                             <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
                                 <Icon className="w-8 h-8 text-blue-600" />
                             </div>
-                            <div className="text-3xl font-bold text-gray-900 mb-2">{value}</div>
+                            <div className="text-3xl font-bold text-gray-900 mb-2"> <CountUp end={value} enableScrollSpy />+</div>
                             <div className="text-gray-600 font-medium">{label}</div>
                         </div>
                     ))}
@@ -225,12 +226,15 @@ const JobExperienceSection = () => {
                             Let's discuss your WordPress project or explore my premium Elementor templates to kickstart your website.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105">
-                                Get In Touch
-                            </button>
-                            <button className="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl font-medium hover:bg-gray-50 transition-all duration-300">
+                            <a href='#contact'>
+                                <button className="px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-all duration-300 cursor-pointer hover:scale-105">
+                                    Get In Touch
+                                </button>
+                            </a>
+
+                            {/* <button className="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl font-medium hover:bg-gray-50 transition-all duration-300">
                                 View Templates
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
