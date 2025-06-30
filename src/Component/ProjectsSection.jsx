@@ -36,7 +36,7 @@ const ProjectsSection = () => {
         }
     ];
     return (
-        <section id="projects" className="py-20 ">
+        <section id="projects" className="py-20 overflow-x-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
@@ -61,7 +61,7 @@ const ProjectsSection = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                                <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-center">
                                     <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{project.title}</h3>
                                     <p className="text-gray-700 mb-6 leading-relaxed text-lg">{project.description}</p>
                                     <div className="flex flex-wrap gap-2 mb-8">
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
                                             </span>
                                         ))}
                                     </div>
-                                    <div className="flex gap-4">
+                                    <div className="flex flex-wrap gap-4">
                                         <a href={project.live} className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg shadow-blue-600/25">
                                             <ExternalLink size={16} />
                                             Live Demo

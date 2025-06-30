@@ -26,7 +26,7 @@ const AboutSection = () => {
 
                         <div className="bg-gray-50 rounded-2xl p-6 space-y-4">
                             <h4 className="font-semibold text-gray-900 mb-4">Quick Facts</h4>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid md:grid-cols-2 gap-4">
                                 <div className="flex items-center gap-3">
                                     <MapPin className="text-blue-600" size={16} />
                                     <span className="text-gray-700 text-sm">Dhaka, Bangladesh</span>
@@ -47,7 +47,7 @@ const AboutSection = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-2 gap-6">
                         <div className="bg-blue-50 p-6 rounded-2xl text-center hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                                 <Code size={24} className="text-white" />

@@ -134,8 +134,7 @@ const Header = () => {
             )}
 
             {/* Mobile Menu Slide Panel */}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 z-50 lg:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                }`}>
+            <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 z-50 lg:hidden ${isMenuOpen ? 'translate-x-0 opacity-100 pointer-events-auto' : 'translate-x-full opacity-0 pointer-events-none hidden'}`}>
                 <div className="flex flex-col h-full">
                     {/* Mobile Menu Header */}
                     <div className="flex items-center justify-between bg-white p-6 border-b border-gray-200">

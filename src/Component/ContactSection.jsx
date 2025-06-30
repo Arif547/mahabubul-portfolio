@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 
 const ContactSection = () => {
     return (
-        <section id="contact" className="py-20 bg-gray-50">
+        <section id="contact" className="py-20 bg-gray-50 overflow-x-hidden">
             <div className="max-w-4xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
@@ -15,9 +15,9 @@ const ContactSection = () => {
 
                 <div className="grid lg:grid-cols-2 gap-12">
                     <div className="space-y-8">
-                        <div>
+                        <div className="space-y-6">
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h3>
-                            <p className="text-gray-700 leading-relaxed mb-8">
+                            <p className="text-gray-700 leading-relaxed mb-8 text-wrap">
                                 I'm always interested in hearing about new projects and opportunities.
                                 Whether you're a company looking to hire, or you're someone looking to build something great,
                                 I'd love to hear from you.
@@ -51,7 +51,9 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-900">LinkedIn</p>
-                                    <p className="text-gray-600">https://www.linkedin.com/in/mahabubularif9/</p>
+                                    <a href="https://www.linkedin.com/in/mahabubularif9/">
+                                        <p className="text-gray-600">/in/mahabubularif9</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

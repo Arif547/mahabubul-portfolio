@@ -187,7 +187,7 @@ const SkillsSection = () => {
                     {skills.map((skill, index) => (
                         <div
                             key={skill.name}
-                            className={`group relative bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 cursor-pointer ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                            className={`group relative bg-white p-4 md:p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 cursor-pointer ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                                 }`}
                             style={{
                                 transitionDelay: isVisible ? `${index * 100}ms` : '0ms'

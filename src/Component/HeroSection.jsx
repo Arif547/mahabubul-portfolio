@@ -53,7 +53,7 @@ const HeroSection = () => {
 
                             </div>
 
-                            <div className="flex items-center gap-8 pt-4">
+                            {/* <div className="flex items-center gap-8 pt-4">
                                 <div className="text-center">
                                     <div className="text-2xl font-bold text-gray-900">50+</div>
                                     <div className="text-sm text-gray-600">Projects Done</div>
@@ -66,7 +66,7 @@ const HeroSection = () => {
                                     <div className="text-2xl font-bold text-gray-900">20+</div>
                                     <div className="text-sm text-gray-600">Happy Clients</div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Developer Image - Top Right */}
