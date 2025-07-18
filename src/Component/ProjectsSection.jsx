@@ -5,6 +5,16 @@ import { Github, ExternalLink } from 'lucide-react';
 const ProjectsSection = () => {
     const projects = [
         {
+            title: "Sports Club Management System (SCMS)",
+            description: "A complete club management platform built to handle user registration, court/session bookings, membership approvals, payment processing, and admin operations for a single sports club. The system offers dedicated dashboards for three roles with complete CRUD and notification features.",
+            tech: ["React", "Node.js", "MongoDB", "Tailwind", "Express JS", "FireBase", "Stripe", "TanStack Query", "Axios"],
+            image: "https://i.ibb.co/WNZ5h2GV/sport-Club.jpg",
+            category: "Full Stack",
+            Client: "#",
+            Server: "#",
+            live: "https://sportsclub515.netlify.app/"
+        },
+        {
             title: "Recipe Hub Delicious Recipes",
             description: "About RecipeHub is a user-friendly, dynamic Recipe Book App that allows users to discover, share, and manage delicious recipes from around the world. It features top liked recipes, personalized recipe management, and social interaction through likes and user accounts.",
             tech: ["React", "Node.js", "MongoDB", "Tailwind", "Express JS", "FireBase"],

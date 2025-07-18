@@ -55,7 +55,7 @@ const JobExperienceSection = () => {
                 "Served 1000+ customers globally"
             ],
             skills: ["Template Design", "Elementor Pro", "WooCommerce", "theme customization", "SEO Optimization", "E-commerce Solutions"],
-            isActive: true
+            isActive: false
         }
     ];
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Menu, X, Code, User } from 'lucide-react';
-import resume from '../assets/resume-mahabubul.pdf'
+import resume from '../assets/Mahabubul-Alam-Resume-dev.pdf'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
